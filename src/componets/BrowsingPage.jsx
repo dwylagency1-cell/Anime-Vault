@@ -2,7 +2,8 @@ import img from './img/animewault.png'
 import { Search } from "lucide-react";
 import SideBar from './sidebar';
 
-function Browse() {
+function Browse(props) {
+    const wallpaper = props.wallpapers
     return (
         <div className="min-h-screen w-full overflow-x-hidden pb-[64px] md:pb-0">
             <div className="w-full h-[70px] flex justify-between items-center gap-3 px-3 md:px-0 z-100">
@@ -22,8 +23,62 @@ function Browse() {
                         />
                     </div>
                 </div>
-                <div className="hidden md:block w-[300px] h-[70px]"></div>
+                <div className="hidden md:block w-[300px] h-[70px]">
+                    
+                </div>
             </div>
+            <div className=' w-full ml-[220px] grid grid-cols-[300px_300px_300px] gap-x-[20px] gap-y-[20px] p-[20px] pl-[70px]'>
+                    {
+                        wallpaper.map(function(element){
+                            return (
+                                <div className="bg-[#111111] w-[300px] h-[210px] rounded-2xl overflow-hidden border border-[#25202F] transition-all duration-300 hover:border-[#8B5CF6] hover:shadow-[0_0_20px_rgba(139,92,246,0.18)] hover:-translate-y-1">
+
+                                    <div className="w-full h-full relative">
+
+                                        {/* Wallpaper */}
+                                        <img
+                                            src={element.image}
+                                            alt="Anime Wallpaper"
+                                            className="w-full h-full object-cover"
+                                        />
+
+                                        {/* Dark gradient */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent"></div>
+
+                                        {/* Bottom section */}
+                                        <div className="absolute bottom-0 left-0 right-0 p-4">
+
+                                            <div className="flex items-end justify-between gap-3">
+
+                                                {/* Wallpaper info */}
+                                                <div>
+                                                    <h2 className="text-white text-lg font-semibold">
+                                                        Anime Wallpaper
+                                                    </h2>
+
+                                                    <p className="text-gray-400 text-sm mt-1">
+                                                        {element.anime}
+                                                    </p>
+                                                </div>
+
+                                                {/* Download button */}
+                                                <button
+                                                    className="shrink-0 bg-[#8B5CF6] text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:bg-[#A855F7] hover:shadow-[0_0_15px_rgba(139,92,246,0.4)]"
+                                                >
+                                                    Download
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            )
+                        })
+                    }
+</div>
             <SideBar />
         </div>
     );
