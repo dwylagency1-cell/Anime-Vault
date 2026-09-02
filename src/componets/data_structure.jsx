@@ -5,6 +5,12 @@ import chainsaw_man from './img/chainsawman.png'
 import mahoraga from './img/mahoraga.png'
 import gun_devil from './img/gundevil.png'
 import gojoeyes from './img/gojoeyes.png'
+import naruto from './img/naruto.png'
+import naruto_sasuke from './img/naruto_sasuke.png'
+import obito from './img/obito.png'
+import pain from './img/pain.png'
+import madara from './img/madara.png'
+import child from './img/child.png'
 const wallpapers = [
     {
         id: 1,
@@ -62,6 +68,53 @@ const wallpapers = [
     image: gojoeyes,
     resolution: "1920x1080"
     },
-    
+    {
+    id: 8,
+    title: "Naruto",
+    anime: "Naruto",
+    category: "Character",
+    image: naruto,
+    resolution: "1920x1080"
+    },
+    {
+    id: 9,
+    title: "Naruto and Sasuke",
+    anime: "Naruto",
+    category: "Character",
+    image: naruto_sasuke,
+    resolution: "1920x1080"
+    },
+    {
+    id: 10,
+    title: "Pain",
+    anime: "Naruto",
+    category: "Character",
+    image: pain,
+    resolution: "1920x1080"
+    },
+    {
+    id: 11,
+    title: "Madara",
+    anime: "Naruto",
+    category: "Character",
+    image: madara,
+    resolution: "1920x1080"
+    },
+    {
+    id: 12,
+    title: "Naruto and Sasuke",
+    anime: "Naruto",
+    category: "Character",
+    image: child,
+    resolution: "1920x1080"
+    },
+    {
+    id: 13,
+    title: "Obito",
+    anime: "Naruto",
+    category: "Character",
+    image: obito,
+    resolution: "1920x1080"
+    }
 ];
 export default wallpapers
