@@ -2,10 +2,27 @@ import img from './img/animewault.png'
 import { Search } from "lucide-react";
 import SideBar from './sidebar';
 import { useNavigate } from "react-router-dom";
+import Fuse from 'fuse.js'
+import { useMemo, useState } from 'react';
 
 function Browse(props) {
+    const [query, setQuery] = useState('')
     const wallpaper = props.wallpapers
     const navigate = useNavigate();
+
+    const fuse = useMemo(() => {
+    return new Fuse(wallpaper, {
+      keys: ['anime'], // fields to search
+      threshold: 0.4,            // 0 = exact, 1 = match anything
+    })
+  }, [wallpaper])
+
+    const results = query ? fuse.search(query) : []
+
+    const displayItems = query
+    ? results.map(({ item }) => item)
+    : wallpaper
+
     return (
         <div className="min-h-screen w-full overflow-x-hidden pb-[64px] md:pb-0">
             <div className="fixed top-0 left-0 w-full h-[70px] flex justify-between items-center gap-3 px-3 md:px-0 z-50 bg-[#080808]">
@@ -20,7 +37,9 @@ function Browse(props) {
                         <Search size={21} className="text-gray-500 mr-3 shrink-0" />
                         <input
                             type="text"
-                            placeholder="Search anime wallpapers..."
+                            placeholder="Search wallpaper by anime name..."
+                            value={query}
+                            onChange={(e) => setQuery(e.target.value)}
                             className="flex-1 min-w-0 bg-transparent outline-none text-white placeholder:text-gray-500"
                         />
                     </div>
@@ -31,7 +50,7 @@ function Browse(props) {
             </div>
             <div className='pt-[80px] w-full ml-[220px] grid grid-cols-[300px_300px_300px] gap-x-[20px] gap-y-[20px] p-[20px] pl-[70px]'>
                     {
-                        wallpaper.map(function(element){
+                        displayItems.map(function(element){
                             return (
                                 <div className="bg-[#111111] w-[300px] h-[210px] rounded-2xl overflow-hidden border border-[#25202F] transition-all duration-300 hover:border-[#8B5CF6] hover:shadow-[0_0_20px_rgba(139,92,246,0.18)] hover:-translate-y-1">
 
