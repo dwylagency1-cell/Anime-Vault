@@ -1,12 +1,14 @@
 import img from './img/animewault.png'
 import { Search } from "lucide-react";
 import SideBar from './sidebar';
+import { useNavigate } from "react-router-dom";
 
 function Browse(props) {
     const wallpaper = props.wallpapers
+    const navigate = useNavigate();
     return (
         <div className="min-h-screen w-full overflow-x-hidden pb-[64px] md:pb-0">
-            <div className="w-full h-[70px] flex justify-between items-center gap-3 px-3 md:px-0 z-100">
+            <div className="fixed top-0 left-0 w-full h-[70px] flex justify-between items-center gap-3 px-3 md:px-0 z-50 bg-[#080808]">
                 <div className="w-[110px] sm:w-[160px] md:w-[300px] h-[70px] flex justify-center items-center shrink-0">
                     <img
                         className="w-[110px] h-[55px] sm:w-[160px] sm:h-[80px] md:w-[300px] md:h-[150px]"
@@ -27,13 +29,16 @@ function Browse(props) {
                     
                 </div>
             </div>
-            <div className=' w-full ml-[220px] grid grid-cols-[300px_300px_300px] gap-x-[20px] gap-y-[20px] p-[20px] pl-[70px]'>
+            <div className='pt-[80px] w-full ml-[220px] grid grid-cols-[300px_300px_300px] gap-x-[20px] gap-y-[20px] p-[20px] pl-[70px]'>
                     {
                         wallpaper.map(function(element){
                             return (
                                 <div className="bg-[#111111] w-[300px] h-[210px] rounded-2xl overflow-hidden border border-[#25202F] transition-all duration-300 hover:border-[#8B5CF6] hover:shadow-[0_0_20px_rgba(139,92,246,0.18)] hover:-translate-y-1">
 
-                                    <div className="w-full h-full relative">
+                                    <div onClick={function(){
+                                        navigate(`/preview/${element.id}`)
+
+                                    }} className="w-full h-full relative cursor-pointer ">
 
                                         {/* Wallpaper */}
                                         <img
@@ -62,11 +67,14 @@ function Browse(props) {
                                                 </div>
 
                                                 {/* Download button */}
-                                                <button
+                                                <a
+                                                    href={element.image}
+                                                    download
+                                                    onClick={(e) => e.stopPropagation()}
                                                     className="shrink-0 bg-[#8B5CF6] text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:bg-[#A855F7] hover:shadow-[0_0_15px_rgba(139,92,246,0.4)]"
                                                 >
                                                     Download
-                                                </button>
+                                                </a>
 
                                             </div>
 
@@ -78,7 +86,7 @@ function Browse(props) {
                             )
                         })
                     }
-</div>
+            </div>
             <SideBar />
         </div>
     );
