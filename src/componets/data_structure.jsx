@@ -11,6 +11,10 @@ import obito from './img/obito.png'
 import pain from './img/pain.png'
 import madara from './img/madara.png'
 import child from './img/child.png'
+import levi from './img/levi.png'
+import eren from './img/eren.png'
+import beast_titan from './img/beast_titan.png'
+import attact_titan from './img/attact_titan.png'
 const wallpapers = [
     {
         id: 1,
@@ -114,6 +118,38 @@ const wallpapers = [
     anime: "Naruto",
     category: "Character",
     image: obito,
+    resolution: "1920x1080"
+    },
+    {
+    id: 14,
+    title: "Levi",
+    anime: "Attack on Titan",
+    category: "Character",
+    image: levi,
+    resolution: "1920x1080"
+    },
+    {
+    id: 15,
+    title: "Eren",
+    anime: "Attack on Titan",
+    category: "Character",
+    image: eren,
+    resolution: "1920x1080"
+    },
+    {
+    id: 16,
+    title: "Beast titan",
+    anime: "Attack on Titan",
+    category: "Character",
+    image: beast_titan,
+    resolution: "1920x1080"
+    },
+    {
+    id: 17,
+    title: "Attact titan",
+    anime: "Attack on Titan",
+    category: "Character",
+    image: attact_titan,
     resolution: "1920x1080"
     }
 ];
