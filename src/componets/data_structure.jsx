@@ -15,6 +15,11 @@ import levi from './img/levi.png'
 import eren from './img/eren.png'
 import beast_titan from './img/beast_titan.png'
 import attact_titan from './img/attact_titan.png'
+import alldevil from './img/alldevil.png'
+import bombdevil from './img/bombdevil.png'
+import dengi from './img/dengi.png'
+import katanaman from './img/katanaman.png'
+
 const wallpapers = [
     {
         id: 1,
@@ -151,6 +156,38 @@ const wallpapers = [
     category: "Character",
     image: attact_titan,
     resolution: "1920x1080"
+    },
+    {
+    id: 18,
+    title: "katana man",
+    anime: "Chainsaw man",
+    category: "Character",
+    image: katanaman,
+    resolution: "1920x1080"
+    },
+    {
+    id: 19,
+    title: "All devil",
+    anime: "Chainsaw man",
+    category: "Character",
+    image: alldevil,
+    resolution: "1920x1080"
+    },
+    {
+    id: 20,
+    title: "Bomb devil",
+    anime: "Chainsaw man",
+    category: "Character",
+    image: bombdevil,
+    resolution: "1920x1080"
+    },
+    {
+    id: 21,
+    title: "Dengi",
+    anime: "Chainsaw man",
+    category: "Character",
+    image: dengi,
+    resolution: "1920x1080" 
     }
 ];
 export default wallpapers
