@@ -1,11 +1,14 @@
 import img from './img/animewault.png'
-import { Search } from "lucide-react";
+import { Search, Heart } from "lucide-react";
 import SideBar from './sidebar';
 import { useNavigate } from "react-router-dom";
 import Fuse from 'fuse.js'
 import { useMemo, useState } from 'react';
+import { useContext } from 'react';
+import { favouriteContext } from './FavouriteContext';
 
 function Browse(props) {
+    const {favourite, setFavourite} = useContext(favouriteContext)
     const [query, setQuery] = useState('')
     const wallpaper = props.wallpapers
     const navigate = useNavigate();
@@ -54,10 +57,12 @@ function Browse(props) {
                             return (
                                 <div className="bg-[#111111] w-[300px] h-[210px] rounded-2xl overflow-hidden border border-[#25202F] transition-all duration-300 hover:border-[#8B5CF6] hover:shadow-[0_0_20px_rgba(139,92,246,0.18)] hover:-translate-y-1">
 
-                                    <div onClick={function(){
-                                        navigate(`/preview/${element.id}`)
-
-                                    }} className="w-full h-full relative cursor-pointer ">
+                                    <div
+                                        onClick={function(){
+                                            navigate(`/preview/${element.id}`)
+                                        }}
+                                        className="w-full h-full relative cursor-pointer "
+                                    >
 
                                         {/* Wallpaper */}
                                         <img
@@ -68,6 +73,25 @@ function Browse(props) {
 
                                         {/* Dark gradient */}
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent"></div>
+
+                                        {/* Favourite button */}
+                                        <button
+                                            onClick={function(e){
+                                                e.stopPropagation();
+
+                                                if (!favourite.includes(element.id)) {
+                                                    setFavourite([...favourite, element.id]);
+                                                }
+                                            }}
+                                            className="absolute top-3 right-3 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-black/50 backdrop-blur-sm text-white hover:text-[#A855F7] hover:bg-black/70 transition-all duration-300"
+                                        >
+                                            <Heart size={20}
+                                            className={`transition-all duration-300 ${
+                                                favourite.includes(element.id)
+                                                    ? "text-[#A855F7] fill-[#A855F7]"
+                                                    : "text-white"
+                                            }`} />
+                                        </button>
 
                                         {/* Bottom section */}
                                         <div className="absolute bottom-0 left-0 right-0 p-4">
