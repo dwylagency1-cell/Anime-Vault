@@ -31,7 +31,7 @@ function Favourites(){
                                 <Search size={21} className="text-gray-500 mr-3 shrink-0" />
                                 <input
                                     type="text"
-                                    placeholder="Search anime wallpapers..."
+                                    placeholder="Search wallpaper by anime name..."
                                     className="flex-1 min-w-0 bg-transparent outline-none text-white placeholder:text-gray-500"
                                 />
                             </div>
