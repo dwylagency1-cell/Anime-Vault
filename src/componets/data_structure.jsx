@@ -19,6 +19,10 @@ import alldevil from './img/alldevil.png'
 import bombdevil from './img/bombdevil.png'
 import dengi from './img/dengi.png'
 import katanaman from './img/katanaman.png'
+import gojo_and_students from './img/gojo_and_students.png'
+import mahoraga_smile from './img/mahoraga_smile.png'
+import sukuna_smile from './img/sukuna_smile.png'
+import yuta_and_Gojo from './img/yuta_and_Gojo.png'
 
 const wallpapers = [
     {
@@ -188,6 +192,38 @@ const wallpapers = [
     category: "Character",
     image: dengi,
     resolution: "1920x1080" 
+    },
+    {
+      id: 22,
+      title: "Gojo and his students",
+      anime: "Jujutsu Kaisen",
+      category: "Character",
+      image: gojo_and_students,
+      resolution: "1920x1080"
+    },
+    {
+      id: 23,
+      title: "Mahoraga",
+      anime: "Jujutsu Kaisen",
+      category: "Character",
+      image: mahoraga_smile,
+      resolution: "1920x1080"
+    },
+    {
+      id: 24,
+      title: "Yuta and Gojo",
+      anime: "Jujutsu Kaisen",
+      category: "Character",
+      image: yuta_and_Gojo,
+      resolution: "1920x1080"
+    },
+    {
+      id: 25,
+      title: "Sukuna",
+      anime: "Jujutsu Kaisen",
+      category: "Character",
+      image: sukuna_smile,
+      resolution: "1920x1080"
     }
 ];
 export default wallpapers
