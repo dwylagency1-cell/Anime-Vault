@@ -51,7 +51,10 @@ function Browse(props) {
                     
                 </div>
             </div>
-            <div className='pt-[80px] w-full ml-[220px] grid grid-cols-[300px_300px_300px] gap-x-[20px] gap-y-[20px] p-[20px] pl-[70px]'>
+            <div className="pt-[70px]">
+
+                <div className="w-full ml-0 md:ml-[220px] grid grid-cols-1 md:grid-cols-[300px_300px_300px] gap-x-[10px] md:gap-x-[20px] gap-y-[20px] p-[10px] md:p-[20px] pl-[10px] md:pl-[70px]">
+
                     {
                         displayItems.map(function(element){
                             return (
@@ -61,7 +64,7 @@ function Browse(props) {
                                         onClick={function(){
                                             navigate(`/preview/${element.id}`)
                                         }}
-                                        className="w-full h-full relative cursor-pointer "
+                                        className="w-full h-full relative cursor-pointer"
                                     >
 
                                         {/* Wallpaper */}
@@ -85,12 +88,14 @@ function Browse(props) {
                                             }}
                                             className="absolute top-3 right-3 z-10 w-9 h-9 flex items-center justify-center rounded-full bg-black/50 backdrop-blur-sm text-white hover:text-[#A855F7] hover:bg-black/70 transition-all duration-300"
                                         >
-                                            <Heart size={20}
-                                            className={`transition-all duration-300 ${
-                                                favourite.includes(element.id)
-                                                    ? "text-[#A855F7] fill-[#A855F7]"
-                                                    : "text-white"
-                                            }`} />
+                                            <Heart
+                                                size={20}
+                                                className={`transition-all duration-300 ${
+                                                    favourite.includes(element.id)
+                                                        ? "text-[#A855F7] fill-[#A855F7]"
+                                                        : "text-white"
+                                                }`}
+                                            />
                                         </button>
 
                                         {/* Bottom section */}
@@ -129,6 +134,9 @@ function Browse(props) {
                             )
                         })
                     }
+
+                </div>
+
             </div>
             <SideBar />
         </div>
