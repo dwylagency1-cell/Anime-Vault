@@ -245,16 +245,9 @@ const wallpapers = [
     image: dead,
     resolution: "1920x1080" 
     },
+    
     {
     id: 28,
-    title: "Denji and Beam",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: dead,
-    resolution: "1920x1080" 
-    },
-    {
-    id: 29,
     title: "Denji and Beam",
     anime: "Chainsaw man",
     category: "Character",
@@ -262,7 +255,7 @@ const wallpapers = [
     resolution: "1920x1080" 
     },
     {
-    id: 30,
+    id: 29,
     title: "Chainsaw Devil",
     anime: "Chainsaw man",
     category: "Character",
