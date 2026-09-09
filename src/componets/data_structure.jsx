@@ -23,6 +23,10 @@ import gojo_and_students from './img/gojo_and_students.png'
 import mahoraga_smile from './img/mahoraga_smile.png'
 import sukuna_smile from './img/sukuna_smile.png'
 import yuta_and_Gojo from './img/yuta_and_Gojo.png'
+import trio from './img/trio.png'
+import dead from './img/dead.png'
+import dengi_shark from './img/dengi_shark.png'
+import chainsawdevil from './img/chainsawdevil.png'
 
 const wallpapers = [
     {
@@ -51,7 +55,7 @@ const wallpapers = [
     },
     {
       id: 4,
-      title: "Dengi",
+      title: "Denji",
       anime: "Chainsaw man",
       category: "Character",
       image: chainsaw_man,
@@ -187,7 +191,7 @@ const wallpapers = [
     },
     {
     id: 21,
-    title: "Dengi",
+    title: "Denji",
     anime: "Chainsaw man",
     category: "Character",
     image: dengi,
@@ -224,6 +228,46 @@ const wallpapers = [
       category: "Character",
       image: sukuna_smile,
       resolution: "1920x1080"
+    },
+    {
+    id: 26,
+    title: "Trio",
+    anime: "Chainsaw man",
+    category: "Character",
+    image: trio,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 27,
+    title: "Dead",
+    anime: "Chainsaw man",
+    category: "Character",
+    image: dead,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 28,
+    title: "Denji and Beam",
+    anime: "Chainsaw man",
+    category: "Character",
+    image: dead,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 29,
+    title: "Denji and Beam",
+    anime: "Chainsaw man",
+    category: "Character",
+    image: dengi_shark,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 30,
+    title: "Chainsaw Devil",
+    anime: "Chainsaw man",
+    category: "Character",
+    image: chainsawdevil,
+    resolution: "1920x1080" 
     }
 ];
 export default wallpapers
