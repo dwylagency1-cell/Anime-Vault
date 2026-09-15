@@ -27,6 +27,11 @@ import trio from './img/trio.png'
 import dead from './img/dead.png'
 import dengi_shark from './img/dengi_shark.png'
 import chainsawdevil from './img/chainsawdevil.png'
+import nagi_seishiro from './img/Nagi.png'
+import sae_kaiser from './img/duo_of_football.png'
+import bachira from './img/bachira.png'
+import isagi from './img/isagi.png'
+import ryusei from './img/ryusei.png'
 
 const wallpapers = [
     {
@@ -261,6 +266,48 @@ const wallpapers = [
     category: "Character",
     image: chainsawdevil,
     resolution: "1920x1080" 
-    }
+    },
+    {
+    id: 30,
+    title: "Nagi Seishiro",
+    anime: "Blue Lock",
+    category: "Character",
+    image: nagi_seishiro,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 31,
+    title: "Sae X Kaiser",
+    anime: "Blue Lock",
+    category: "Character",
+    image: sae_kaiser,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 32,
+    title: "Bachira",
+    anime: "Blue Lock",
+    category: "Character",
+    image: bachira,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 33,
+    title: "Isagi",
+    anime: "Blue Lock",
+    category: "Character",
+    image: isagi,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 34,
+    title: "Ryusei",
+    anime: "Blue Lock",
+    category: "Character",
+    image: ryusei,
+    resolution: "1920x1080" 
+    },
+
+    
 ];
 export default wallpapers
