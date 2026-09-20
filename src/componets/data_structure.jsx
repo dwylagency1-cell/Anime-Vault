@@ -1,37 +1,38 @@
-import megumi from './img/megumi.png'
-import dead_gojo from './img/deadgojo.png'
-import yuta from './img/yuta.png'
-import chainsaw_man from './img/chainsawman.png'
-import mahoraga from './img/mahoraga.png'
-import gun_devil from './img/gundevil.png'
-import gojoeyes from './img/gojoeyes.png'
-import naruto from './img/naruto.png'
-import naruto_sasuke from './img/naruto_sasuke.png'
-import obito from './img/obito.png'
-import pain from './img/pain.png'
-import madara from './img/madara.png'
-import child from './img/child.png'
-import levi from './img/levi.png'
-import eren from './img/eren.png'
-import beast_titan from './img/beast_titan.png'
-import attact_titan from './img/attact_titan.png'
-import alldevil from './img/alldevil.png'
-import bombdevil from './img/bombdevil.png'
-import dengi from './img/dengi.png'
-import katanaman from './img/katanaman.png'
-import gojo_and_students from './img/gojo_and_students.png'
-import mahoraga_smile from './img/mahoraga_smile.png'
-import sukuna_smile from './img/sukuna_smile.png'
-import yuta_and_Gojo from './img/yuta_and_Gojo.png'
-import trio from './img/trio.png'
-import dead from './img/dead.png'
-import dengi_shark from './img/dengi_shark.png'
-import chainsawdevil from './img/chainsawdevil.png'
-import nagi_seishiro from './img/Nagi.png'
-import sae_kaiser from './img/duo_of_football.png'
-import bachira from './img/bachira.png'
-import isagi from './img/isagi.png'
-import ryusei from './img/ryusei.png'
+import megumi from './img/megumiwebp.webp'
+import dead_gojo from './img/deadgojo.webp'
+import yuta from './img/yuta.webp'
+import chainsaw_man from './img/chainsawman.webp'
+import mahoraga from './img/mahoraga.webp'
+import gun_devil from './img/gundevil.webp'
+import gojoeyes from './img/gojoeyes.webp'
+import naruto from './img/naruto.webp'
+import naruto_sasuke from './img/naruto_sasuke.webp'
+import obito from './img/obito.webp'
+import pain from './img/pain.webp'
+import madara from './img/madara.webp'
+import child from './img/child.webp'
+import levi from './img/levi.webp'
+import eren from './img/eren.webp'
+import beast_titan from './img/beast_titan.webp'
+import attact_titan from './img/attact_titan.webp'
+import alldevil from './img/alldevil.webp'
+import bombdevil from './img/bombdevil.webp'
+import dengi from './img/dengi.webp'
+import katanaman from './img/katanaman.webp'
+import gojo_and_students from './img/gojo_and_students.webp'
+import mahoraga_smile from './img/mahoraga_smile.webp'
+import sukuna_smile from './img/sukuna_smile.webp'
+import yuta_and_Gojo from './img/yuta_and_Gojo.webp'
+import trio from './img/trio.webp'
+import dead from './img/dead.webp'
+import dengi_shark from './img/dengi_shark.webp'
+import chainsawdevil from './img/chainsawdevil.webp'
+import nagi_seishiro from './img/Nagi.webp'
+import sae_kaiser from './img/duo_of_football.webp'
+import bachira from './img/bachira.webp'
+import isagi from './img/isagi.webp'
+import ryusei from './img/ryusei.webp'
+import aki from './img/aki.webp'
 
 const wallpapers = [
     {
@@ -305,6 +306,14 @@ const wallpapers = [
     anime: "Blue Lock",
     category: "Character",
     image: ryusei,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 35,
+    title: "Aki Hayakawa",
+    anime: "Chainsaw man",
+    category: "Character",
+    image: aki,
     resolution: "1920x1080" 
     },
 
