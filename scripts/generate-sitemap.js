@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const projectRoot = path.resolve(__dirname, "..");
 
-const dataFile = path.join(projectRoot, "src", "data_structure.jsx");
+const dataFile = path.join(projectRoot, "src", "components", "data_structure.jsx");
 const publicDir = path.join(projectRoot, "public");
 const sitemapFile = path.join(publicDir, "sitemap.xml");
 
