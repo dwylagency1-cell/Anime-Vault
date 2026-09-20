@@ -56,7 +56,7 @@ function Browse(props) {
                 <div className="w-full ml-0 md:ml-[220px] grid grid-cols-1 md:grid-cols-[300px_300px_300px] gap-x-[10px] md:gap-x-[20px] gap-y-[20px] p-[10px] md:p-[20px] pl-[10px] md:pl-[70px]">
 
                     {
-                        displayItems.map(function(element){
+                        displayItems.map(function(element,index){
                             return (
                                 <div className="bg-[#111111] w-[300px] h-[210px] rounded-2xl overflow-hidden border border-[#25202F] transition-all duration-300 hover:border-[#8B5CF6] hover:shadow-[0_0_20px_rgba(139,92,246,0.18)] hover:-translate-y-1">
 
@@ -72,6 +72,8 @@ function Browse(props) {
                                             src={element.image}
                                             alt="Anime Wallpaper"
                                             className="w-full h-full object-cover"
+                                            loading={index === 0 ? "eager" : "lazy"}
+                                            fetchPriority={index=== 0 ? "high" : "auto"}
                                         />
 
                                         {/* Dark gradient */}
