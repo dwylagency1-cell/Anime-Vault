@@ -33,6 +33,10 @@ import bachira from './img/bachira.webp'
 import isagi from './img/isagi.webp'
 import ryusei from './img/ryusei.webp'
 import aki from './img/aki.webp'
+import ByakuyaKuchiki from './img/ByakuyaKuchiki.webp'
+import GrimmjowJaegerjaquez from './img/GrimmjowJaegerjaquez.webp'
+import KisukeUrahara_X_ShinjiHirako from './img/KisukeUrahara_X_ShinjiHirako.webp'
+import Urahara from './img/Urahara.webp'
 
 const wallpapers = [
     {
@@ -314,6 +318,38 @@ const wallpapers = [
     anime: "Chainsaw man",
     category: "Character",
     image: aki,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 36,
+    title: "Byakuya Kuchiki",
+    anime: "Bleach",
+    category: "Character",
+    image: ByakuyaKuchiki,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 37,
+    title: "Grimmjow Jaegerjaquez",
+    anime: "Bleach",
+    category: "Character",
+    image: GrimmjowJaegerjaquez,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 38,
+    title: "KisukeUrahara and ShinjiHirako",
+    anime: "Bleach",
+    category: "Character",
+    image: KisukeUrahara_X_ShinjiHirako,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 39,
+    title: "Urahara",
+    anime: "Bleach",
+    category: "Character",
+    image: Urahara,
     resolution: "1920x1080" 
     },
 
