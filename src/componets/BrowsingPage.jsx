@@ -6,6 +6,7 @@ import Fuse from 'fuse.js'
 import { useMemo, useState } from 'react';
 import { useContext } from 'react';
 import { favouriteContext } from './FavouriteContext';
+import { Plus } from "lucide-react";
 
 function Browse(props) {
     const {favourite, setFavourite} = useContext(favouriteContext)
@@ -47,8 +48,23 @@ function Browse(props) {
                         />
                     </div>
                 </div>
-                <div className="hidden md:block w-[300px] h-[70px]">
-                    
+                <div className="relative hidden md:flex w-[300px] h-[70px] items-center justify-center">
+
+                        <button className="peer flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#8B5CF6] border border-[#A855F7] text-white font-semibold transition-all duration-300 hover:bg-[#111111] hover:shadow-[0_0_18px_rgba(139,92,246,0.35)] cursor-pointer">
+                            <Plus size={18} />
+                            Contribute
+                        </button>
+
+                        <div className="absolute top-[62px] right-100px w-[230px] p-3 rounded-xl bg-[#111111] border border-[#2A2A2A] text-center opacity-0 invisible peer-hover:opacity-100 peer-hover:visible transition-all duration-300">
+                            <p className="text-white text-sm font-semibold">
+                                Coming Soon!
+                            </p>
+
+                            <p className="text-gray-400 text-xs mt-1">
+                                This feature will let you upload your wallpapers to Anime Vault.
+                            </p>
+                        </div>
+
                 </div>
             </div>
             <div className="pt-[70px]">
