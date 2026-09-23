@@ -37,6 +37,11 @@ import ByakuyaKuchiki from './img/ByakuyaKuchiki.webp'
 import GrimmjowJaegerjaquez from './img/GrimmjowJaegerjaquez.webp'
 import KisukeUrahara_X_ShinjiHirako from './img/KisukeUrahara_X_ShinjiHirako.webp'
 import Urahara from './img/Urahara.webp'
+import Gojo_in_space from './img/Gojo_in_space.png'
+import sad_levi from './img/sad_levi.webp'
+import SōsukeAizen from './img/SōsukeAizen.webp'
+import minato from './img/minato.webp'
+import GinIchimaru from './img/GinIchimaru.webp'
 
 const wallpapers = [
     {
@@ -350,6 +355,46 @@ const wallpapers = [
     anime: "Bleach",
     category: "Character",
     image: Urahara,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 40,
+    title: "Gojo Satoru",
+    anime: "Jujutsu Kaisen",
+    category: "Character",
+    image: Gojo_in_space,
+    resolution: "1920x1080"
+    },
+    {
+    id: 41,
+    title: "Levi",
+    anime: "Attack on Titan",
+    category: "Character",
+    image: sad_levi,
+    resolution: "1920x1080"
+    },
+    {
+    id: 42,
+    title: "Sōsuke Aizen",
+    anime: "Bleach",
+    category: "Character",
+    image: SōsukeAizen,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 43,
+    title: "Minato Namikaze",
+    anime: "Naruto",
+    category: "Character",
+    image: minato,
+    resolution: "1920x1080"
+    },
+    {
+    id: 44,
+    title: "Gin Ichimaru",
+    anime: "Bleach",
+    category: "Character",
+    image: GinIchimaru,
     resolution: "1920x1080" 
     },
 
