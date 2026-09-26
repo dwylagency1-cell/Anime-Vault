@@ -42,6 +42,11 @@ import sad_levi from './img/sad_levi.webp'
 import SōsukeAizen from './img/SōsukeAizen.webp'
 import minato from './img/minato.webp'
 import GinIchimaru from './img/GinIchimaru.webp'
+import goku_vegita from "./img/goku_vegita.webp"
+import goku from './img/goku.webp'
+import GokuBlack from './img/GokuBlack.webp'
+import Trunks from './img/Trunks.webp'
+import UltimateGohan from './img/UltimateGohan.webp'
 
 const wallpapers = [
     {
@@ -395,6 +400,46 @@ const wallpapers = [
     anime: "Bleach",
     category: "Character",
     image: GinIchimaru,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 45,
+    title: "Goku and Vegeta",
+    anime: "Dragon Ball Z",
+    category: "Character",
+    image: goku_vegita,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 46,
+    title: "Goku",
+    anime: "Dragon Ball Z",
+    category: "Character",
+    image: goku,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 47,
+    title: "Goku Black",
+    anime: "Dragon Ball Z",
+    category: "Character",
+    image: GokuBlack,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 48,
+    title: "Trunks",
+    anime: "Dragon Ball Z",
+    category: "Character",
+    image: Trunks,
+    resolution: "1920x1080" 
+    },
+    {
+    id: 49,
+    title: "Ultimate Gohan",
+    anime: "Dragon Ball Z",
+    category: "Character",
+    image: UltimateGohan,
     resolution: "1920x1080" 
     },
 
