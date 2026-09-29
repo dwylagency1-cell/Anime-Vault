@@ -47,6 +47,10 @@ import goku from './img/goku.webp'
 import GokuBlack from './img/GokuBlack.webp'
 import Trunks from './img/Trunks.webp'
 import UltimateGohan from './img/UltimateGohan.webp'
+import Gaara from './img/Gaara.webp'
+import Jiraiya from './img/Jiraiya.webp'
+import NarutoUzumaki from './img/NarutoUzumaki.webp'
+import sasuke from './img/sasuke.webp'
 
 const wallpapers = [
     {
@@ -441,6 +445,39 @@ const wallpapers = [
     category: "Character",
     image: UltimateGohan,
     resolution: "1920x1080" 
+    },
+
+    {
+    id: 50,
+    title: "Gaara",
+    anime: "Naruto",
+    category: "Character",
+    image: Gaara,
+    resolution: "1920x1080"
+    },
+    {
+    id: 51,
+    title: "Jiraiya",
+    anime: "Naruto",
+    category: "Character",
+    image: Jiraiya,
+    resolution: "1920x1080"
+    },
+    {
+    id: 52,
+    title: "Naruto Uzumaki",
+    anime: "Naruto",
+    category: "Character",
+    image: NarutoUzumaki,
+    resolution: "1920x1080"
+    },
+    {
+    id: 53,
+    title: "sasuke",
+    anime: "Naruto",
+    category: "Character",
+    image: sasuke,
+    resolution: "1920x1080"
     },
 
     
