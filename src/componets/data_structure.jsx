@@ -51,6 +51,11 @@ import Gaara from './img/Gaara.webp'
 import Jiraiya from './img/Jiraiya.webp'
 import NarutoUzumaki from './img/NarutoUzumaki.webp'
 import sasuke from './img/sasuke.webp'
+import Rumbling from './img/Rumbling.webp'
+import squad  from './img/squard.webp'
+import leviandhange from './img/leviandhange.webp'
+import ErwinSmith from './img/ErwinSmith.webp'
+import ErenJaeger from './img/ErenJaeger.webp'
 
 const wallpapers = [
     {
@@ -477,6 +482,46 @@ const wallpapers = [
     anime: "Naruto",
     category: "Character",
     image: sasuke,
+    resolution: "1920x1080"
+    },
+    {
+    id: 54,
+    title: "Rumbling",
+    anime: "Attack on Titan",
+    category: "Character",
+    image: Rumbling,
+    resolution: "1920x1080"
+    },
+    {
+    id: 55,
+    title: "squad",
+    anime: "Attack on Titan",
+    category: "Character",
+    image: squad ,
+    resolution: "1920x1080"
+    },
+    {
+    id: 56,
+    title: "Levi and Hange",
+    anime: "Attack on Titan",
+    category: "Character",
+    image: leviandhange ,
+    resolution: "1920x1080"
+    },
+    {
+    id: 57,
+    title: "Erwin Smith",
+    anime: "Attack on Titan",
+    category: "Character",
+    image: ErwinSmith ,
+    resolution: "1920x1080"
+    },
+    {
+    id: 58,
+    title: "Eren Jaeger",
+    anime: "Attack on Titan",
+    category: "Character",
+    image: ErenJaeger ,
     resolution: "1920x1080"
     },
 
