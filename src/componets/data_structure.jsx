@@ -56,6 +56,11 @@ import squad  from './img/squard.webp'
 import leviandhange from './img/leviandhange.webp'
 import ErwinSmith from './img/ErwinSmith.webp'
 import ErenJaeger from './img/ErenJaeger.webp'
+import StatusofGod from './img/StatusofGod.webp'
+import Sung_Jin_Woo from './img/Sung_Jin_Woo.webp'
+import SungJin_Woo from './img/SungJin_Woo.webp'
+import SungJinWoo_in_real from './img/SungJinWoo_in_real.webp'
+import SungJinWoo from './img/SungJinWoo.webp'
 
 const wallpapers = [
     {
@@ -64,7 +69,9 @@ const wallpapers = [
         anime: "Jujutsu Kaisen",
         category: "Character",
         image: megumi,
-        resolution: "1920x1080"
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
         id: 2,
@@ -72,459 +79,621 @@ const wallpapers = [
         anime: "Jujutsu Kaisen",
         category: "Character",
         image: dead_gojo,
-        resolution: "1920x1080"
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-      id: 3,
-      title: "yuta",
-      anime: "Jujutsu Kaisen",
-      category: "Character",
-      image: yuta,
-      resolution: "1920x1080"
+        id: 3,
+        title: "yuta",
+        anime: "Jujutsu Kaisen",
+        category: "Character",
+        image: yuta,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-      id: 4,
-      title: "Denji",
-      anime: "Chainsaw man",
-      category: "Character",
-      image: chainsaw_man,
-      resolution: "1920x1080"
+        id: 4,
+        title: "Denji",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: chainsaw_man,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 5,
-    title: "Mahoraga",
-    anime: "Jujutsu Kaisen",
-    category: "Character",
-    image: mahoraga,
-    resolution: "1920x1080"
+        id: 5,
+        title: "Mahoraga",
+        anime: "Jujutsu Kaisen",
+        category: "Character",
+        image: mahoraga,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 6,
-    title: "Gun Devil",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: gun_devil,
-    resolution: "1920x1080"
+        id: 6,
+        title: "Gun Devil",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: gun_devil,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 7,
-    title: "Gojo",
-    anime: "Jujutsu Kaisen",
-    category: "Character",
-    image: gojoeyes,
-    resolution: "1920x1080"
+        id: 7,
+        title: "Gojo",
+        anime: "Jujutsu Kaisen",
+        category: "Character",
+        image: gojoeyes,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 8,
-    title: "Naruto",
-    anime: "Naruto",
-    category: "Character",
-    image: naruto,
-    resolution: "1920x1080"
+        id: 8,
+        title: "Naruto",
+        anime: "Naruto",
+        category: "Character",
+        image: naruto,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 9,
-    title: "Naruto and Sasuke",
-    anime: "Naruto",
-    category: "Character",
-    image: naruto_sasuke,
-    resolution: "1920x1080"
+        id: 9,
+        title: "Naruto and Sasuke",
+        anime: "Naruto",
+        category: "Character",
+        image: naruto_sasuke,
+        resolution: "1920x1080",
+        isPremium: true,
+        priceId: "pri_01m4bpxf6phry5t9mmws0b79c0"
+        
     },
     {
-    id: 10,
-    title: "Pain",
-    anime: "Naruto",
-    category: "Character",
-    image: pain,
-    resolution: "1920x1080"
+        id: 10,
+        title: "Pain",
+        anime: "Naruto",
+        category: "Character",
+        image: pain,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 11,
-    title: "Madara",
-    anime: "Naruto",
-    category: "Character",
-    image: madara,
-    resolution: "1920x1080"
+        id: 11,
+        title: "Madara",
+        anime: "Naruto",
+        category: "Character",
+        image: madara,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 12,
-    title: "Naruto and Sasuke",
-    anime: "Naruto",
-    category: "Character",
-    image: child,
-    resolution: "1920x1080"
+        id: 12,
+        title: "Naruto and Sasuke",
+        anime: "Naruto",
+        category: "Character",
+        image: child,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 13,
-    title: "Obito",
-    anime: "Naruto",
-    category: "Character",
-    image: obito,
-    resolution: "1920x1080"
+        id: 13,
+        title: "Obito",
+        anime: "Naruto",
+        category: "Character",
+        image: obito,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 14,
-    title: "Levi",
-    anime: "Attack on Titan",
-    category: "Character",
-    image: levi,
-    resolution: "1920x1080"
+        id: 14,
+        title: "Levi",
+        anime: "Attack on Titan",
+        category: "Character",
+        image: levi,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 15,
-    title: "Eren",
-    anime: "Attack on Titan",
-    category: "Character",
-    image: eren,
-    resolution: "1920x1080"
+        id: 15,
+        title: "Eren",
+        anime: "Attack on Titan",
+        category: "Character",
+        image: eren,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 16,
-    title: "Beast titan",
-    anime: "Attack on Titan",
-    category: "Character",
-    image: beast_titan,
-    resolution: "1920x1080"
+        id: 16,
+        title: "Beast titan",
+        anime: "Attack on Titan",
+        category: "Character",
+        image: beast_titan,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 17,
-    title: "Attact titan",
-    anime: "Attack on Titan",
-    category: "Character",
-    image: attact_titan,
-    resolution: "1920x1080"
+        id: 17,
+        title: "Attact titan",
+        anime: "Attack on Titan",
+        category: "Character",
+        image: attact_titan,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 18,
-    title: "katana man",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: katanaman,
-    resolution: "1920x1080"
+        id: 18,
+        title: "katana man",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: katanaman,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 19,
-    title: "All devil",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: alldevil,
-    resolution: "1920x1080"
+        id: 19,
+        title: "All devil",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: alldevil,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 20,
-    title: "Bomb devil",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: bombdevil,
-    resolution: "1920x1080"
+        id: 20,
+        title: "Bomb devil",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: bombdevil,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 21,
-    title: "Denji",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: dengi,
-    resolution: "1920x1080" 
+        id: 21,
+        title: "Denji",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: dengi,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-      id: 22,
-      title: "Gojo and his students",
-      anime: "Jujutsu Kaisen",
-      category: "Character",
-      image: gojo_and_students,
-      resolution: "1920x1080"
+        id: 22,
+        title: "Gojo and his students",
+        anime: "Jujutsu Kaisen",
+        category: "Character",
+        image: gojo_and_students,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-      id: 23,
-      title: "Mahoraga",
-      anime: "Jujutsu Kaisen",
-      category: "Character",
-      image: mahoraga_smile,
-      resolution: "1920x1080"
+        id: 23,
+        title: "Mahoraga",
+        anime: "Jujutsu Kaisen",
+        category: "Character",
+        image: mahoraga_smile,
+        resolution: "1920x1080",
+        isPremium: true,
+        priceId: "pri_01m4bpxf6phry5t9mmws0b79c0"
     },
     {
-      id: 24,
-      title: "Yuta and Gojo",
-      anime: "Jujutsu Kaisen",
-      category: "Character",
-      image: yuta_and_Gojo,
-      resolution: "1920x1080"
+        id: 24,
+        title: "Yuta and Gojo",
+        anime: "Jujutsu Kaisen",
+        category: "Character",
+        image: yuta_and_Gojo,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-      id: 25,
-      title: "Sukuna",
-      anime: "Jujutsu Kaisen",
-      category: "Character",
-      image: sukuna_smile,
-      resolution: "1920x1080"
+        id: 25,
+        title: "Sukuna",
+        anime: "Jujutsu Kaisen",
+        category: "Character",
+        image: sukuna_smile,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 26,
-    title: "Trio",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: trio,
-    resolution: "1920x1080" 
+        id: 26,
+        title: "Trio",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: trio,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 27,
-    title: "Dead",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: dead,
-    resolution: "1920x1080" 
-    },
-    
-    {
-    id: 28,
-    title: "Denji and Beam",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: dengi_shark,
-    resolution: "1920x1080" 
+        id: 27,
+        title: "Dead",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: dead,
+        resolution: "1920x1080",
+        isPremium: true,
+        priceId: "pri_01m4rht8snas21aacd37kk9aq3"
     },
     {
-    id: 29,
-    title: "Chainsaw Devil",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: chainsawdevil,
-    resolution: "1920x1080" 
+        id: 28,
+        title: "Denji and Beam",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: dengi_shark,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 30,
-    title: "Nagi Seishiro",
-    anime: "Blue Lock",
-    category: "Character",
-    image: nagi_seishiro,
-    resolution: "1920x1080" 
+        id: 29,
+        title: "Chainsaw Devil",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: chainsawdevil,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 31,
-    title: "Sae X Kaiser",
-    anime: "Blue Lock",
-    category: "Character",
-    image: sae_kaiser,
-    resolution: "1920x1080" 
+        id: 30,
+        title: "Nagi Seishiro",
+        anime: "Blue Lock",
+        category: "Character",
+        image: nagi_seishiro,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 32,
-    title: "Bachira",
-    anime: "Blue Lock",
-    category: "Character",
-    image: bachira,
-    resolution: "1920x1080" 
+        id: 31,
+        title: "Sae X Kaiser",
+        anime: "Blue Lock",
+        category: "Character",
+        image: sae_kaiser,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 33,
-    title: "Isagi",
-    anime: "Blue Lock",
-    category: "Character",
-    image: isagi,
-    resolution: "1920x1080" 
+        id: 32,
+        title: "Bachira",
+        anime: "Blue Lock",
+        category: "Character",
+        image: bachira,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 34,
-    title: "Ryusei",
-    anime: "Blue Lock",
-    category: "Character",
-    image: ryusei,
-    resolution: "1920x1080" 
+        id: 33,
+        title: "Isagi",
+        anime: "Blue Lock",
+        category: "Character",
+        image: isagi,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 35,
-    title: "Aki Hayakawa",
-    anime: "Chainsaw man",
-    category: "Character",
-    image: aki,
-    resolution: "1920x1080" 
+        id: 34,
+        title: "Ryusei",
+        anime: "Blue Lock",
+        category: "Character",
+        image: ryusei,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 36,
-    title: "Byakuya Kuchiki",
-    anime: "Bleach",
-    category: "Character",
-    image: ByakuyaKuchiki,
-    resolution: "1920x1080" 
+        id: 35,
+        title: "Aki Hayakawa",
+        anime: "Chainsaw man",
+        category: "Character",
+        image: aki,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 37,
-    title: "Grimmjow Jaegerjaquez",
-    anime: "Bleach",
-    category: "Character",
-    image: GrimmjowJaegerjaquez,
-    resolution: "1920x1080" 
+        id: 36,
+        title: "Byakuya Kuchiki",
+        anime: "Bleach",
+        category: "Character",
+        image: ByakuyaKuchiki,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 38,
-    title: "KisukeUrahara and ShinjiHirako",
-    anime: "Bleach",
-    category: "Character",
-    image: KisukeUrahara_X_ShinjiHirako,
-    resolution: "1920x1080" 
+        id: 37,
+        title: "Grimmjow Jaegerjaquez",
+        anime: "Bleach",
+        category: "Character",
+        image: GrimmjowJaegerjaquez,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 39,
-    title: "Urahara",
-    anime: "Bleach",
-    category: "Character",
-    image: Urahara,
-    resolution: "1920x1080" 
+        id: 38,
+        title: "KisukeUrahara and ShinjiHirako",
+        anime: "Bleach",
+        category: "Character",
+        image: KisukeUrahara_X_ShinjiHirako,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 40,
-    title: "Gojo Satoru",
-    anime: "Jujutsu Kaisen",
-    category: "Character",
-    image: Gojo_in_space,
-    resolution: "1920x1080"
+        id: 39,
+        title: "Urahara",
+        anime: "Bleach",
+        category: "Character",
+        image: Urahara,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 41,
-    title: "Levi",
-    anime: "Attack on Titan",
-    category: "Character",
-    image: sad_levi,
-    resolution: "1920x1080"
+        id: 40,
+        title: "Gojo Satoru",
+        anime: "Jujutsu Kaisen",
+        category: "Character",
+        image: Gojo_in_space,
+        resolution: "1920x1080",
+        isPremium: true,
+        priceId: "pri_01m4rht8snas21aacd37kk9aq3"
     },
     {
-    id: 42,
-    title: "Sōsuke Aizen",
-    anime: "Bleach",
-    category: "Character",
-    image: SōsukeAizen,
-    resolution: "1920x1080" 
+        id: 41,
+        title: "Levi",
+        anime: "Attack on Titan",
+        category: "Character",
+        image: sad_levi,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 43,
-    title: "Minato Namikaze",
-    anime: "Naruto",
-    category: "Character",
-    image: minato,
-    resolution: "1920x1080"
+        id: 42,
+        title: "Sōsuke Aizen",
+        anime: "Bleach",
+        category: "Character",
+        image: SōsukeAizen,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 44,
-    title: "Gin Ichimaru",
-    anime: "Bleach",
-    category: "Character",
-    image: GinIchimaru,
-    resolution: "1920x1080" 
+        id: 43,
+        title: "Minato Namikaze",
+        anime: "Naruto",
+        category: "Character",
+        image: minato,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 45,
-    title: "Goku and Vegeta",
-    anime: "Dragon Ball Z",
-    category: "Character",
-    image: goku_vegita,
-    resolution: "1920x1080" 
+        id: 44,
+        title: "Gin Ichimaru",
+        anime: "Bleach",
+        category: "Character",
+        image: GinIchimaru,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 46,
-    title: "Goku",
-    anime: "Dragon Ball Z",
-    category: "Character",
-    image: goku,
-    resolution: "1920x1080" 
+        id: 45,
+        title: "Goku and Vegeta",
+        anime: "Dragon Ball Z",
+        category: "Character",
+        image: goku_vegita,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 47,
-    title: "Goku Black",
-    anime: "Dragon Ball Z",
-    category: "Character",
-    image: GokuBlack,
-    resolution: "1920x1080" 
+        id: 46,
+        title: "Goku",
+        anime: "Dragon Ball Z",
+        category: "Character",
+        image: goku,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 48,
-    title: "Trunks",
-    anime: "Dragon Ball Z",
-    category: "Character",
-    image: Trunks,
-    resolution: "1920x1080" 
+        id: 47,
+        title: "Goku Black",
+        anime: "Dragon Ball Z",
+        category: "Character",
+        image: GokuBlack,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 49,
-    title: "Ultimate Gohan",
-    anime: "Dragon Ball Z",
-    category: "Character",
-    image: UltimateGohan,
-    resolution: "1920x1080" 
-    },
-
-    {
-    id: 50,
-    title: "Gaara",
-    anime: "Naruto",
-    category: "Character",
-    image: Gaara,
-    resolution: "1920x1080"
+        id: 48,
+        title: "Trunks",
+        anime: "Dragon Ball Z",
+        category: "Character",
+        image: Trunks,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 51,
-    title: "Jiraiya",
-    anime: "Naruto",
-    category: "Character",
-    image: Jiraiya,
-    resolution: "1920x1080"
+        id: 49,
+        title: "Ultimate Gohan",
+        anime: "Dragon Ball Z",
+        category: "Character",
+        image: UltimateGohan,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 52,
-    title: "Naruto Uzumaki",
-    anime: "Naruto",
-    category: "Character",
-    image: NarutoUzumaki,
-    resolution: "1920x1080"
+        id: 50,
+        title: "Gaara",
+        anime: "Naruto",
+        category: "Character",
+        image: Gaara,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 53,
-    title: "sasuke",
-    anime: "Naruto",
-    category: "Character",
-    image: sasuke,
-    resolution: "1920x1080"
+        id: 51,
+        title: "Jiraiya",
+        anime: "Naruto",
+        category: "Character",
+        image: Jiraiya,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 54,
-    title: "Rumbling",
-    anime: "Attack on Titan",
-    category: "Character",
-    image: Rumbling,
-    resolution: "1920x1080"
+        id: 52,
+        title: "Naruto Uzumaki",
+        anime: "Naruto",
+        category: "Character",
+        image: NarutoUzumaki,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 55,
-    title: "squad",
-    anime: "Attack on Titan",
-    category: "Character",
-    image: squad ,
-    resolution: "1920x1080"
+        id: 53,
+        title: "sasuke",
+        anime: "Naruto",
+        category: "Character",
+        image: sasuke,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 56,
-    title: "Levi and Hange",
-    anime: "Attack on Titan",
-    category: "Character",
-    image: leviandhange ,
-    resolution: "1920x1080"
+        id: 54,
+        title: "Rumbling",
+        anime: "Attack on Titan",
+        category: "Character",
+        image: Rumbling,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
     {
-    id: 57,
-    title: "Erwin Smith",
-    anime: "Attack on Titan",
-    category: "Character",
-    image: ErwinSmith ,
-    resolution: "1920x1080"
+        id: 55,
+        title: "squad",
+        anime: "Attack on Titan",
+        category: "Character",
+        image: squad,
+        resolution: "1920x1080",
+        isPremium: true,
+        priceId: "pri_01m4bpxf6phry5t9mmws0b79c0"
     },
     {
-    id: 58,
-    title: "Eren Jaeger",
-    anime: "Attack on Titan",
-    category: "Character",
-    image: ErenJaeger ,
-    resolution: "1920x1080"
+        id: 56,
+        title: "Levi and Hange",
+        anime: "Attack on Titan",
+        category: "Character",
+        image: leviandhange,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
     },
-
-    
+    {
+        id: 57,
+        title: "Erwin Smith",
+        anime: "Attack on Titan",
+        category: "Character",
+        image: ErwinSmith,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
+    },
+    {
+        id: 58,
+        title: "Eren Jaeger",
+        anime: "Attack on Titan",
+        category: "Character",
+        image: ErenJaeger,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
+    },
+    {
+        id: 59,
+        title: "Status of God",
+        anime: "Solo Leveling",
+        category: "Character",
+        image: StatusofGod,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
+    },
+    {
+        id: 60,
+        title: "Sung Jin Woo",
+        anime: "Solo Leveling",
+        category: "Character",
+        image: Sung_Jin_Woo,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
+    },
+    {
+        id: 61,
+        title: "Sung Jin Woo",
+        anime: "Solo Leveling",
+        category: "Character",
+        image: SungJin_Woo,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
+    },
+    {
+        id: 62,
+        title: "Sung Jin Woo in real life",
+        anime: "Solo Leveling",
+        category: "Character",
+        image: SungJinWoo_in_real,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
+    },
+    {
+        id: 63,
+        title: "Sung Jin Woo",
+        anime: "Solo Leveling",
+        category: "Character",
+        image: SungJinWoo,
+        resolution: "1920x1080",
+        isPremium: false,
+        priceId: null
+    },
 ];
-export default wallpapers
+
+export default wallpapers;
